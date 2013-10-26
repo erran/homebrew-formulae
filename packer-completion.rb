@@ -7,6 +7,6 @@ class PackerCompletion < Formula
   head 'https://github.com/ipwnstuff/packer-completion.git'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['packer']
+    (prefix+'etc/bash_completion.d').install %w[packer-completion.bash]
   end
 end
